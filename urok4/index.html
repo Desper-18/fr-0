@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Tables</h1>
+  <table border="1" cellspacing="0" cellpadding="10" width="900">
+    <caption>Пример таблицы</caption>
+    <!-- tr>th*4^tr*3>td*4 -->
+    <thead>
+      <tr>
+        <th colspan="4">График прихода и ухода сотрудников</th>
+      </tr>
+      <tr>
+        <th>Имя</th>
+        <th>Должность</th>
+        <th width="100">Время прихода</th>
+        <th width="100">Время ухода</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Гена</td>
+        <td>Сварщик</td>
+        <td>8:45</td>
+        <td width="70">17:30</td>
+      </tr>
+      <tr>
+        <td>Салим</td>
+        <td>Штукатурщик</td>
+        <td rowspan="2">8:30</td>
+        <td>18:00</td>
+      </tr>
+      <tr>
+        <td>Диловар</td>
+        <td>Электрик</td>
+        <td width="30">17:13</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>

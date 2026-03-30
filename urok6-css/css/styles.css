@@ -1,0 +1,23 @@
+h1 {
+  color: rgba(0, 0, 255, 0.5);
+}
+
+h2 {
+  color: red !important;
+}
+
+.title_2 {
+  color: blue;
+  font-size: 24px;
+  text-align: left;
+}
+
+.red-box {
+  border-width: 50px;
+  border-style: ridge;
+  border-color: rgb(229, 126, 126);
+  text-align: center;
+}
+
+
+

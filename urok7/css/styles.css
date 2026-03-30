@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: rgb(25, 25, 26);
+  text-align: center;
+}
+
+.element {
+  color: white;
+  font-size: 24px;
+  text-align: center;
+}
+
+.block {
+  display: block;
+  background-color: red;
+}
+
+.inline-block {
+  display: inline-block;
+  background-color: green;
+}
+
+.inline {
+  display: inline;
+  background-color: blue;
+}
+
+.marker {
+  color: yellow;
+}
+
+.card {
+  background-color: silver;
+  color: white;
+  min-height: 120px;
+  width: 300px;
+  /*        TB   RL */
+  padding: 20px 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  border: 2px solid crimson;
+  border-radius: 12px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.img {
+  width: 100px;
+  float: left;
+}
+.clearfix {
+  clear: both;
+}

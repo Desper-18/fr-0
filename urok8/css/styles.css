@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+}
+
+.container {
+    border: 2px solid black;
+    padding: 20px;
+    width: 900px;
+    margin: 0 auto;
+    height: 1400px;
+    /* position: relative; */
+}
+
+.box {
+    width: 300px;
+    height: 100px;
+    padding: 5px;
+    color: snow;
+    background-color: dodgerblue;
+    border: 5px solid tomato;
+    margin-bottom: 20px;
+}
+
+.box.active {
+    background-color: deeppink;
+    border: 5px solid springgreen;
+}
+
+.static {
+    position: static;
+}
+
+.relative {
+    /* position: relative; */
+    left: 20px;
+    top: 20px;
+}
+
+.absolute {
+    /* position: absolute; */
+    left: 20px;
+    top: 20px;
+}
+
+.fixed {
+    /* position: fixed; */
+    right: 20px;
+    bottom: 20px;
+}
+
+.sticky {
+    /* position: sticky; */
+    top: 10px;
+}

@@ -3,15 +3,16 @@
 }
 
 body {
+    min-height: 2500px;
 }
 
 .container {
     border: 2px solid black;
     padding: 20px;
-    width: 900px;
+    max-width: 900px;
     margin: 0 auto;
     height: 1400px;
-    /* position: relative; */
+    position: relative;
 }
 
 .box {
@@ -31,27 +32,65 @@ body {
 
 .static {
     position: static;
+    top: 20px;
+    left: 20px;
 }
 
 .relative {
     /* position: relative; */
-    left: 20px;
-    top: 20px;
+    left: 0px;
+    top: 0px;
 }
 
 .absolute {
     /* position: absolute; */
-    left: 20px;
-    top: 20px;
+    /* width: auto;
+    height: auto;
+    background-color: rgba(200, 0, 255, 0.4) !important;
+    margin-bottom: 0; */
+    /* right: 4px;
+    top: 4px; */
+    inset: 0;
 }
 
 .fixed {
     /* position: fixed; */
     right: 20px;
     bottom: 20px;
+    inset: 0;
 }
 
 .sticky {
-    /* position: sticky; */
+    position: sticky;
     top: 10px;
+}
+
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    min-width: 400px;
+}
+
+th, td {
+    border: 1px solid black;
+}
+
+thead {
+    background-color: blueviolet;
+    color: snow;
+}
+
+tbody {
+    max-height: 400px;
+    overflow: auto;
+}
+
+tbody tr:nth-of-type(odd) {
+    background-color: paleturquoise;
+}
+
+thead {
+    position: sticky;
+    top: 0px;
 }

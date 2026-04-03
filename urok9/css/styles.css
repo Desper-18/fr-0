@@ -4,18 +4,69 @@
 
 body {
   font-family: sans-serif;
+  margin: 0;
+  background-color: gainsboro;
 }
 
 .cover {
-  background-image: linear-gradient(30deg, blue, red);
   /* background-image: url("../images/css-pattern-2.png"); */
-  background-image: url("../images/nature-portrait.jpg");
-  
+  background-image: linear-gradient(30deg, blue, red);
+  background-color: rgba(193, 9, 221, 0.249);
+  background-image: url("../images/girl-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-blend-mode: luminosity;
   min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
+  align-content: center;
   color: white;
+  display: none;
+}
+
+.bg-text-mix {
+  display: none;
+  font-size: 96px;
+  font-weight: bold;
+  text-transform: uppercase;
+  align-content: center;
+  min-height: 300px;
+  /* background-image: url("../images/colorful-rainbow.avif"); */
+  color: white;
+  text-align: center;
+}
+
+.no-bg{
+  mix-blend-mode: darken;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.avatar:not(:first-of-type) {
+  margin-left: -40px;
+}
+
+.blur {
+  /* filter: blur(5px); */
+  
+}
+
+.chb {
+  /* filter: grayscale(60%) brightness(1.2); */
+}
+
+.avatar-1 {
+  object-position: 50% -10px;
 }
 
 
+.passport-image {
+  width: 200px;
+  aspect-ratio: 9/16;
+  object-fit: cover;
+}

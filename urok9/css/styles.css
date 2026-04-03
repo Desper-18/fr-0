@@ -6,3 +6,16 @@ body {
   font-family: sans-serif;
 }
 
+.cover {
+  background-image: linear-gradient(30deg, blue, red);
+  /* background-image: url("../images/css-pattern-2.png"); */
+  background-image: url("../images/nature-portrait.jpg");
+  
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+

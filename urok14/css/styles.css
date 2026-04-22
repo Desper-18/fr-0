@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    color: white;
+    background-color: red;
+    transform: rotate(3deg);
+    border-radius: 10px;
+    text-align: center;
+    transition: all 1.4s cubic-bezier(1, 0.05, 0, 1.86);
+    animation: balabol 2s infinite alternate;
+}
+
+.box:hover {
+    transform: translate(10px, 40px) scale(0.8) rotate(0deg);
+    background-color: blue;
+    border-radius: 50%;
+}
+
+@keyframes balabol {
+    0% {
+        border-radius: 50%;
+        background-color: deeppink;
+    }
+
+    50% {
+        border-radius: 25%;
+        background-color: blueviolet;
+    }
+
+    100% {
+        border-radius: 0;
+        background-color: royalblue;
+    }
+}
